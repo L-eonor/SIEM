@@ -8,17 +8,22 @@
 		<link rel="icon" type="image/png" href="images/logo/site-logo-hover.png">
 		
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Darker Grotesque'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret One'>
 		
 		<style>
 		
-			<!--> Defines Navebar<-->
+			/* Defines Navebar*/
+			.div_Navbar{
+				margin:2vw;
+			}
+
+
 			ul{
-				margin-left: 2%; 
-				margin-right: 2%; 
-				margin-top: 1%;
+				margin:0;
 				padding: 0; 
   				overflow: hidden; 
 				background-color: #FFFFFF;		
+				position: static;
 			}
 			
 			li{
@@ -27,28 +32,45 @@
 			}
 			
 			li a { 
-			  display: block; 
 			  color: #865336; 
 			  text-align: left; 
 			  padding: 16px; 
 			  text-decoration: none;
 			  font-family: Darker Grotesque;
 			  font-size: 2vw;
-			  <!--> max-font-size: 20px;<-->
+			  text-align: center;
 			} 
 			 
 			li a:hover { 
 			  color: #6B705C;
 			  text-decoration: underline;
-			}
-			
-			.navb_logo{
+			}			
+
+			.navb_logo_hover{  /*green*/
 				width: 8vw;
 				margin-right: 2vw;
+				position: relative;
+				padding: none;
 			}
+
+			.navb_logo{
+				z-index: 1;
+				width: 8vw;
+				margin: 0;
+				position: absolute;
+				top: 8px+2vw;
+				left:24px+2vw;
+			}
+
+
+			.navb_logo:hover{   /*logo 1 disappears*/
+				display: none;
+				border:1px solid #6B705C ;
+				
+			}
+
 			.darkMode_item{
 				float: right;
-				margin-right: 2%;
 				color: #6B705C;
 			}
 			.darkMode_a{
@@ -56,13 +78,59 @@
 				text-decoration: none;
 			}
 			
-			
-			<!-->Defines body<-->
-			
-			.photo_title{
-				margin-top:200vw;
+
+			/*cover photo and text*/
+			.cover{
+				position: relative;
+				margin:2vw;
+				margin-top: 1vw;
+				height: 80vh;
 			}
+
+			.coverTitle{
+				z-index: 2;
+				position: absolute;
+				left: 10%;
+				top: 25%;
+				display: inline-block; /*cover only text and not all line*/
+				margin: 0;								
+				color: #865336;
+				background-color:rgba(255,232,214, 50%);
+				padding:20px;
+				text-align:left;
+				font-family:Poiret One;
+				font-size: 8%;
+			}
+
+			.cover_photo{
+				z-index: 1;
+				position:relative;
+  				width: 100%;
+				height: 100%;	
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+
+			/*description*/
+			.description{
+				z-index: 2;
+				position: relative;
+				color: #6B705C;
+				background-color:rgba(255,232,214, 100%);
+				margin: 2vw;
+			}
+
+			.description p {
+				text-align: right;
+			  	font-family: Darker Grotesque;
+				margin-right: 2vw;
+				font-size: 3vw;
+			}
+
+			
 		
+
 		</style>
 		
 		
@@ -71,29 +139,29 @@
 		
 	</head>
 	<body>
-		<div id="Navebar">
-			<ul>
-				<li> <a href="#home"> <img class="navb_logo" src="images/logo/site-logo.png" alt="HomePage">  </a></li>
+	
+	
+		<div class="div_Navbar">
+			<ul id="Navbar">
+				<li> <a href="#home"> <img class="navb_logo" src="images/logo/site-logo.png" alt="HomePage"> <img class="navb_logo_hover" src="images/logo/site-logo-hover.png" alt="HomePage">  </a></li>
 				<li> <a href="#Recipes"> Recipes     </a></li>
 				<li> <a href="#Tips"> Tips           </a></li>
 				<li> <a href="#AboutMe"> About Me    </a></li>
 				<li> <a href="#Downloads"> Downloads </a></li>
-				
 				<li class="darkMode_item"> <a href="#Dark Mode" class="darkMode_a"> Dark Mode </a></li>
 			</ul>
 		</div>
 		
-		
-		<div id="Body">
-			<table id="photo_title">
-				<tr>
-					<td> <img src="images\headers\cover_photo.jpg"> </td>
-				</tr>
-			</table>
-			
+		<div class="cover">
+			<img class="cover_photo" src="images\headers\cover_photo.jpg" alt="cover photo"> 
+			<h1 class="coverTitle">University <br> Student <br> @ the <br>Kitchen</h1>
 		</div>
 		
-		
+		<div class="description">
+			<p>When a uni student tries to balance healthy eating habits, academic responsibilities and personal life, anything can happen.<br>
+				Here, there’s a sneak pic at the colourful (hopefully) meals, for those looking for inspiration. Meanwhile, a foodie is growing strong.
+			</p>
+		<div>		
 		
 	</body>
 </html>
