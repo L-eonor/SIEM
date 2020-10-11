@@ -4,26 +4,61 @@
 		<title>tp1 index file</title>
 		<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
 		<style>
-			h1{
-				font-family:Arial;
+			#Home{
+				float: left;
+			}
+			#Home a{	
 				color: OrangeRed;
+				top: -80px;
+				background-color: #ffffff;
 			}
-			table{
+			ul {
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+			}
+
+			li {
+  				float: right;
+			}
+
+			li a {
+				text-decoration: none;
 				font-family:Arial;
-				text-align:center;
-				width:100%
-				border:None
-				align:center
+  				display: block;
+  				padding: 8px;
+				color: #555555;
+				text-align:end;
+				font-size: 2vw;
 			}
-			td{
-				width: 10%;
+			li a:hover{
+				background-color: #999999;
 			}
-			.image_cropper {
-				width: 2529px;
-				height: 2529px;
-				position: relative;
+
+			hr{
+				margin:0;
+			}
+
+			.card{
+				font-family: Arial;
+				text-align: center;
+				display: inline-block;
+				margin: 20px;
+			}
+
+			.card img{
+				width: 30vw;
+				height:30vw;
+				object-fit: cover;
 				overflow: hidden;
-				border-radius: 50%;
+				object-fit:cover;
+				border-radius:50%;
+			}
+			.card_of_cards{
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			
@@ -32,42 +67,35 @@
 
 	<body>
 
-		<h1>Empresa X</h1>
-		<hr style="color:grey">
-		
-		<table>
-			<tr>
-				<td> 
-					<div class="image_cropper" >
-						<img src="images\DSC_8584.JPG" alt="first image">
-					</div>
-				 </td>
-				<td> 
-					<div>
-						<div class="image_cropper" >
-							<img src="images\DSC_8584.JPG" alt="first image"  class="round" >
-						</div>
-					</div>
-				 </td>
-				 <td> 
-					<div>
-						<div class="image_cropper" >
-							<img src="images\DSC_8584.JPG" alt="first image"  class="round" >
-						</div>
-					</div>
-				 </td>
-			</tr>
-			<tr>
-				<th> Imagem1 </th>
-				<th> Imagem1 </th>
-				<th> Imagem1 </th>
-			</tr>
-			<tr>
-				<td> Lorem asbkjsbefjbhakfjvbhakjdfb</td>
-				<td> Lorem asbkjsbefjbhakfjvbhakjdfb 2</td>
-				<td> Lorem asbkjsbefjbhakfjvbhakjdfb 3</td>
-			</tr>
-		</table>
+		<ul>
+			<li>           <a href="Contacts.html">           Contactos   </a>   </li>
+			<li>           <a href="lista_funcionarios.html"> Funcionários</a>   </li>
+			<li>           <a href="News.html">               Notícias    </a>   </li>
+			<li id="Home"> <a href="" >                       Empresa X   </a>   </li>
+			
+		</ul>
+
+		<hr id="navbar_line">
+
+		<div class="card_of_cards">
+			<div class="card">
+				<img src="images/img1.jpg">
+				<h2> Título Imagem 1 </h2>
+				<p> Descrição imagem 1 <br>Descrição imagem 1 <br>Descrição imagem 1 </h2>
+			</div>
+			
+			<div class="card">
+				<img src="images/img2.jpg">
+				<h2> Título Imagem 2 </h2>
+				<p> Descrição imagem 1 <br>Descrição imagem 1 <br>Descrição imagem 1 </h2>
+			</div>
+	
+			<div class="card">
+				<img src="images/img3.jpg">
+				<h2> Título Imagem 3 </h2>
+				<p> Descrição imagem 1 <br>Descrição imagem 1 <br>Descrição imagem 1 </h2>
+			</div>
+		</div>
 
 	</body>
 </html>
