@@ -25,10 +25,16 @@
   font-size: 2vw;
   text-align: center;
 } 
+
+#Navbar li #current_page { 
+    color: #6B705C; 
+    font-weight: bold;
+  } 
  
 #Navbar li a:hover { 
   color: #6B705C;
   text-decoration: underline;
+  text-decoration-style: solid;
 }			
 
 .navb_logo_hover{  /*green*/
