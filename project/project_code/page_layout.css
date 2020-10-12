@@ -1,0 +1,44 @@
+/*Defines how title and image title are displayed*/
+
+.page_descriptor{
+    position: relative;
+    margin:2vw;
+    margin-top: 1vw;
+    height: min( max(min(120px, 20vh), 40px), max(min(120px, 10vw), 400px));     /*max min para width + height*/
+}
+
+.page_descriptor h1{
+    font-family:Darker Grotesque;
+    /*adjusts at height and width*/
+    font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));  
+    
+    text-align:left;
+	margin: auto;						
+    color: #6B705C;
+    padding:0px;
+
+    z-index: 1;
+    position: absolute; /*allows for superposition*/
+    left: 5px;
+    display: flex;
+    align-items: center; /*fazer para ajustar ao centro */
+
+    -ms-transform: translate(10%, 0%);
+    transform: translate(10%, 0%);
+    
+    
+
+    
+}
+
+.page_descriptor img{
+    z-index: 0;
+    position:relative;
+    width: 100%;
+    height: 100%;	
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+}
+
+
