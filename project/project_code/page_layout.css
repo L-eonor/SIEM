@@ -1,3 +1,4 @@
+/*******************page divider*******************/
 /*Defines how title and image title are displayed*/
 
 .page_descriptor{
@@ -38,5 +39,43 @@
     overflow: hidden;
     display: block;
 }
+
+
+
+/*******************CARDS*******************/
+/*Defines how cards are displayed*/
+.cards_content{
+    position: relative;
+    display: block;
+    margin:2vw;
+    margin-top: 1vw;
+    /*height: 0;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: min(200px, 25vw);
+}
+
+
+.card p{
+    text-align: center;
+    font-family: Darker Grotesque;
+    font-size: min( max(min(40px, 7vh), 10px), max(min(40px, 3vw), 10px));
+    color:#865336;
+    background-color: #FFE8D6;
+    height: min( max(min(4*40px, 4*7vh), 4*10px), max(min(4*40px, 4*3vw), 4*10px));
+    padding: 10px;
+    margin: 0;
+}
+
+.card img{
+    width: 100%;
+    height: min(3/2*200px, 3/2*25vw);
+    object-fit: cover;
+    overflow: hidden;
+}
+
 
 
