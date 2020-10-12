@@ -5,6 +5,8 @@
     margin:2vw;
     margin-top: 1vw;
     height: min( max(min(120px, 20vh), 40px), max(min(120px, 10vw), 400px));     /*max min para width + height*/
+    display: flex;
+    align-items: center;
 }
 
 .page_descriptor h1{
@@ -19,15 +21,9 @@
 
     z-index: 1;
     position: absolute; /*allows for superposition*/
-    left: 5px;
-    display: flex;
-    align-items: center; /*fazer para ajustar ao centro */
-
-    -ms-transform: translate(10%, 0%);
-    transform: translate(10%, 0%);
     
-    
-
+    -ms-transform: translate(10%, -20%);
+    transform: translate(10%, -20%);    
     
 }
 
