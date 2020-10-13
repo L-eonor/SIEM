@@ -18,7 +18,8 @@
     font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));
     
     text-align:left;
-	margin: auto;						
+    margin: auto;
+    /*escolher uma melhor combinação de color e background que dê para todos*/						
     color: white;/*rgba(183,183,164, 70%);*/
     background-color: #6B705C;
     padding: 5px;
@@ -78,7 +79,7 @@
 .card p{
     text-align: center;
     font-family: Darker Grotesque;
-    font-size: min( max(min(40px, 7vh), 10px), max(min(40px, 3vw), 10px));
+    font-size: max(min(min(7vh, 3vw), 30px), 10px);
     color:#865336;
     margin: auto;
 }
@@ -89,3 +90,28 @@
     object-fit: cover;
     overflow: hidden;
 }
+
+
+/**************lists*************/
+.list_with_emoticons{
+    text-align: left;
+    font-family: Darker Grotesque;
+    font-size: max(min(min(7vh, 3vw), 20px), 10px);
+    color:#865336;
+    margin: auto;
+}
+
+
+.list_with_emoticons ul{
+    list-style:none;
+}
+
+
+.list_with_emoticons li:nth-child(2n+1)::before {
+    content: "🎓";
+}
+
+.list_with_emoticons li:nth-child(2n)::before {
+    content: "🧂";
+}
+  
