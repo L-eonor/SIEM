@@ -3,10 +3,11 @@
     position: relative;
     margin:2vw;
     margin-top: 1vw;
-    height: 80vh;
+    height: 65vh;
+    max-height: 800px;
 }
 
-.coverTitle{
+.cover h1{
     z-index: 1;
     position: absolute;
     left: 10%;
@@ -18,10 +19,10 @@
     padding:20px;
     text-align:left;
     font-family:Poiret One;
-    font-size: min(5vw, 10vh);
+    font-size: max(min(min(5vw, 10vh),50px), 20px);
 }
 
-.cover_photo{
+.cover img{
     z-index: 0;
     position:relative;
     width: 100%;
@@ -44,6 +45,6 @@
     text-align: right;
     font-family: Darker Grotesque;
     margin-right: 2vw;
-    font-size: 3vw;
+    font-size: max(min(min(7vh, 3vw), 30px), 10px);
 }
 
