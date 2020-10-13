@@ -93,12 +93,14 @@
 
 
 /**************lists*************/
+
 .list_with_emoticons{
     text-align: left;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
     color:#865336;
-    margin: auto;
+    margin:25vw;
+    margin-top: 1vw;
 }
 
 
@@ -108,10 +110,17 @@
 
 
 .list_with_emoticons li:nth-child(2n+1)::before {
-    content: "🎓";
+    content: '\1F393';/*"🎓";*/
+    width: 25px;
+    display: inline-block;
+    text-align: center;
 }
 
 .list_with_emoticons li:nth-child(2n)::before {
-    content: "🧂";
+    content: '\1F9C2';/*"🧂";*/
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
 }
   
