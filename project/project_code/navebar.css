@@ -1,4 +1,4 @@
-/* Defines Navebar*/
+/*navbar*/
 .div_Navbar{
     margin-left:2vw;     /*removed margind and substituted for padding- better behaviour when sticky*/
     margin-right:2vw;
@@ -7,96 +7,166 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required for sticky to work*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;/*space-between;*/
+    align-items: center;
+    align-content: space-between;
+
     background-color: white;
     z-index: 3;
 }
-
-
-/*TODO: align at middle*/
-.div_Navbar ul{
-    margin:0;
-    padding: 0; 
-    overflow: hidden; 
-    background-color: #FFFFFF;		
-    position: static;
+.div_Navbar div{
+    width:auto;
 }
 
-.div_Navbar ul li{
-    list-style-type:none;
-    float:left;
-    text-align: center;
-}
+.div_Navbar a { 
+    color: #865336; 
+    text-align: left; 
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    font-family: Darker Grotesque; 
+    font-size: max(min(min(7vh, 3vw), 25px), 10px);
+    
+    
+    max-width: 200px;
+    width: 8vw;
+    height: auto;
+  } 
 
-.div_Navbar ul li a { 
-  color: #865336; 
-  text-align: left; 
-  padding-left: 16px;
-  padding-right: 16px;
-  text-decoration: none;
-  font-family: Darker Grotesque; 
-  font-size: max(min(min(7vh, 3vw), 30px), 10px);
-  
-  max-width: 200px;
-  width: 8vw;
-} 
-
-.div_Navbar ul li #current_page { 
+.div_Navbar #current_page { 
     color: #6B705C; 
     font-weight: bold;
-} 
+}
  
-.div_Navbar ul li a:hover { 
+.div_Navbar a:hover { 
   color: #6B705C;
   text-decoration: underline;
   text-decoration-style: solid;
 }	
 
-.div_Navbar ul .dropdown_content{
+.div_Navbar div .dropdown{
+    display: inline-block;
+    width: 100%;
+}
+
+.div_Navbar div .dropdown{
     display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 160px;
     box-shadow: 8px 8px 16px -6px rgba(0,0,0,0.2);
-    z-index: 1;
+    /*max-width: 200px;*/
+    /*min-width: 160px;*/
+    width:auto;
 }
-.dropdown_content hr{
-    margin: 0;
-}
-.div_Navbar ul .recipes:hover .dropdown_content {  /*when hovering @ recipes, displays dropdown menu*/
+.div_Navbar div:hover .dropdown{  /*when hovering @ recipes, displays dropdown menu*/
     display: block;
 }
 
+.div_Navbar .dropdown hr{
+    margin: 0;
+}
 
 
-.navb_logo_hover{  /*green*/
+
+.div_Navbar .navb_logo_hover{  /*green*/
     margin-right: 2vw;
     position: relative;
     max-width: 200px;
     width: 8vw;
 }
 
-.navb_logo{
+.div_Navbar .navb_logo{
     z-index: +1;
     margin: 0;
+    margin-right: 2vw;
     position: absolute;
-    top: 8px+2vw;
-    left:24px+2vw;
+    /*top: 8px+2vw;
+    left:24px+2vw;*/
     max-width: 200px;
     width: 8vw;
 }
 
 
-.navb_logo:hover{   /*logo 1 disappears*/
+.div_Navbar .navb_logo:hover{   /*logo 1 disappears*/
     display: none;
     border:1px solid #6B705C ;
-    
+
 }
 
-.div_Navbar ul #darkMode_item{
-    float: right;
-    color: #6B705C;
+
+.div_Navbar #darkMode_item {
+    flex-grow: 4;
+    text-align: right;
 }
-.div_Navbar ul #darkMode_item a{
+.div_Navbar #darkMode_item a{
     color: #6B705C;
-    text-decoration: none;
+    padding-right: 0;
 }
+
+/* SLIDER */
+.switch {   /*slider background*/
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline; /*important to be at the middle*/
+    max-width: 30px;
+    width: 4vw;
+    max-height: 17px;
+    height: 2vw;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    max-height: 13px;   /*circle dimensions*/
+    height: 1.5vw;
+    max-width: 13px;
+    width: 1.5vw;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {    /*how much will it slide right*/
+    -webkit-transform: translateX(min(13px, 1.5vw));
+    -ms-transform: translateX(    min(13px, 1.5vw));
+    transform: translateX(        min(13px, 1.5vw));
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
