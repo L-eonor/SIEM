@@ -1,6 +1,12 @@
 /* Defines Navebar*/
 .div_Navbar{
-    margin:2vw;
+    /*margin:2vw;     removed margind and substituted for padding- better behaviour when sticky*/
+    padding: 2vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required for sticky to work*/
+    background-color: white;
+    z-index: 3;
 }
 
 .div_Navbar #Navbar{
@@ -61,7 +67,7 @@
 }
 
 .navb_logo{
-    z-index: 1;
+    z-index: +1;
     width: 8vw;
     margin: 0;
     position: absolute;
