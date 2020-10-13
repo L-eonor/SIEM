@@ -11,7 +11,7 @@
 }
 
 .page_descriptor h1{
-    font-family:Darker Grotesque;
+    font-family:Poiret One;
     /*adjusts at height and width*/
     font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));  
     
@@ -55,24 +55,29 @@
 }
 
 .card{
-    width: min(200px, 25vw);
+    width: min(400px, 25vw);
 }
 
+.card div{
+    background-color: #FFE8D6;
+    height: min( max(min(4*40px, 4*7vh), 4*10px), max(min(4*40px, 4*3vw), 4*10px));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
 
 .card p{
     text-align: center;
     font-family: Darker Grotesque;
     font-size: min( max(min(40px, 7vh), 10px), max(min(40px, 3vw), 10px));
     color:#865336;
-    background-color: #FFE8D6;
-    height: min( max(min(4*40px, 4*7vh), 4*10px), max(min(4*40px, 4*3vw), 4*10px));
-    padding: 10px;
-    margin: 0;
+    margin: auto;
 }
 
 .card img{
     width: 100%;
-    height: min(3/2*200px, 3/2*25vw);
+    height: min(5/4*400px, 3/2*25vw);
     object-fit: cover;
     overflow: hidden;
 }
