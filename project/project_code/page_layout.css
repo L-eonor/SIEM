@@ -5,7 +5,9 @@
     position: relative;
     margin:2vw;
     margin-top: 1vw;
-    height: min( max(min(120px, 20vh), 40px), max(min(120px, 10vw), 400px));     /*max min para width + height*/
+    min-height: 30px;
+    max-height: 400px;
+    height: min( 20vh, 10vw);     /*max min para width + height*/
     display: flex;
     align-items: center;
 }
@@ -13,13 +15,13 @@
 .page_descriptor h1{
     font-family:Poiret One;
     /*adjusts at height and width*/
-    font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));  
+    font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));
     
     text-align:left;
 	margin: auto;						
     color: #6B705C;
     background-color:rgba(183,183,164, 70%);
-    padding: 8px;
+    padding: auto;
     border-radius: 5%;
 
     z-index: 0;
@@ -48,19 +50,24 @@
     position: relative;
     margin:2vw;
     margin-top: 1vw;
-    /*height: 0;*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .card{
-    width: min(400px, 30vw);
+    width: 30vw;
+    max-width: 400px;
+    min-width: 200px;
+    margin: auto;     /*allows for centering cards, when using justify-content*/
 }
 
 .card div{
     background-color: #FFE8D6;
-    height: min( max(min(4*40px, 4*7vh), 4*10px), max(min(4*40px, 4*3vw), 4*10px));
+    min-height: 40px;    /*4*10px;*/
+    max-height: 160px; /*4*40px;*/
+    height: min(28vh, 12vw); /*min(4*7vh, 4*3vw);*/
     padding: 10px;
     display: flex;
     align-items: center;
@@ -82,6 +89,3 @@
     object-fit: cover;
     overflow: hidden;
 }
-
-
-
