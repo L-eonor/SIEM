@@ -19,16 +19,16 @@
     
     text-align:left;
 	margin: auto;						
-    color: #6B705C;
-    background-color:rgba(183,183,164, 70%);
-    padding: auto;
+    color: white;/*rgba(183,183,164, 70%);*/
+    background-color: #6B705C;
+    padding: 5px;
     border-radius: 5%;
 
     z-index: 0;
     position: absolute; /*allows for superposition*/
     
-    -ms-transform: translate(10%, 0%);
-    transform: translate(10%, 0%);    
+    -ms-transform: translate(2vw, 0%);
+    transform: translate(2vw, 0%);    
     
 }
 
