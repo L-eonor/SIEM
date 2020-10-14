@@ -68,9 +68,12 @@
     min-width: 200px;
     margin: auto;     /*allows for centering cards, when using justify-content*/
     display: inline-block;
+    
+    margin-bottom: 2vw;
+    margin-top: 2vw;
 }
 
-.card div{  /*div containing card description*/
+.card .description_on_hover{  /*div containing card description*/
     
     background-color: #FFE8D6;
     opacity: 0.8;
@@ -80,18 +83,23 @@
     padding: 10px;
     display: flex;*/
     align-items: center;
-    margin-bottom: 2vw;
+    /*margin-bottom: 2vw;*/
     text-decoration: none;
     display: none;    /*displays description*/
-    position: absolute;
+    position: relative;
     top:0;
-    height:100%;
-    width: 30vw;
-    max-width: 400px;
-    min-width: 200px;
+    height: auto;
+    width: 100%;
+    /*max-width: 400px;
+    min-width: 200px;*/
+    
 }
-.card :hover  div{
+.card div{ /*ver comentário abaixo*/
     display: flex;
+}
+
+.card :hover  .description_on_hover{   /*esconde a div "description_on_hover, mas se for só a description on hover, nao funciona, porque torna ambas as div flexíveis (a description on hover e o pai), daí ter acrescentado o bloco de cima*/
+    display: flex;   /*flex permite que ao mostrar, a div em metade*/
 }
 
 .card p{
