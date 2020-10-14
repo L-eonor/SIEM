@@ -52,10 +52,16 @@
     margin:2vw;
     margin-top: 1vw;
     display: flex;
-    justify-content: space-between;  
+    justify-content: center;  
     align-items: center;
     flex-wrap: wrap;
 }
+.cards_content a{
+    text-decoration: none;
+}
+
+
+
 
 .card{
     width: 30vw;
@@ -73,7 +79,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 2vw;
-
+    text-decoration: none;
 }
 
 .card p{
@@ -91,6 +97,9 @@
     overflow: hidden;
 }
 
+.card img :hover{
+    background-color:  #FFE8D6;
+}
 
 /**************lists*************/
 

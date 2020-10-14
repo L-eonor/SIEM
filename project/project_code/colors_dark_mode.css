@@ -1,0 +1,47 @@
+/*cover photo and text*/
+body{
+    background-color:#6B705C;
+}
+.cover h1{						
+    color: #FFE8D6;
+    background-color:rgba(	107, 112, 92, 50%);
+}
+
+/*description*/
+.description{
+    color: #FFE8D6;
+    background-color: #A5A58D;
+}
+
+
+/****************** NAVBAR STYLE ***************************************************************************************************************/
+.div_Navbar{
+    background-color: #6B705C;
+}
+
+
+.div_Navbar a { 
+    color: #FFE8D6; 
+} 
+
+.div_Navbar #current_page { 
+    color: #B7B7A4; 
+}
+ 
+.div_Navbar a:hover { 
+  color: #B7B7A4;
+  ;
+}	
+
+.div_Navbar div .dropdown{
+    background-color: #6B705C;
+    box-shadow: 8px 8px 16px -6px rgba(255,255,255,0.5);
+}
+
+.div_Navbar .navb_logo:hover{   /*logo 1 disappears*/
+    border:1px solid #6B705C ;
+}
+
+.div_Navbar #darkMode_item a{
+    color: #FFE8D6;
+}
