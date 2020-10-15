@@ -6,7 +6,7 @@ body{
 
 .cover h1{
     color: #865336;
-    background-color:rgba(255,232,214, 70%);
+    background-color:rgba(255,232,214, 90%);
     
 }
 
@@ -25,13 +25,14 @@ body{
 .cover_content h2{
     color: #865336;
 }
-.cover_content .arrow{
-    border: solid #865336;
+.cover_content .button_to_expand i{
+    color: #865336;
 }
 
 /****************** NAVBAR STYLE ***************************************************************************************************************/
-.div_Navbar, .div_Navbar div{
-    background-color: white;
+.div_Navbar{
+    background-color: white ;
+    border-bottom:#DDBEA9 5px dashed;
 }
 
 
@@ -59,6 +60,9 @@ body{
     border:1px solid #6B705C ;
 }
 
+.div_Navbar #darkMode_item{
+    background-color: white;
+}
 .div_Navbar #darkMode_item a{
     color: #6B705C;
 }
