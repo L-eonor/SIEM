@@ -1,0 +1,124 @@
+/*******************page divider*******************/
+/*Defines how title and image title are displayed*/
+
+.page_descriptor{
+    position: relative;
+    margin:2vw;
+    margin-top: 1vw;
+    min-height: 30px;
+    max-height: 400px;
+    height: min( 20vh, 10vw);     /*max min para width + height*/
+    display: flex;
+    align-items: center;
+}
+
+.page_descriptor h1{
+    font-family:Poiret One;
+    /*adjusts at height and width*/
+    font-size: min( max(min(60px, 10vh), 20px), max(min(60px, 5vw), 20px));
+    
+    text-align:left;
+    margin: auto;
+    /*escolher uma melhor combinação de color e background que dê para todos*/						
+    color: rgba(255, 255, 255, 50%);/*rgba(183,183,164, 70%);*/
+    background-color: #6B705C;
+    padding: 5px;
+    border-radius: 5%;
+
+    z-index: 0;
+    position: absolute; /*allows for superposition*/
+    
+    -ms-transform: translate(2vw, 0%);
+    transform: translate(2vw, 0%);    
+    
+}
+
+.page_descriptor img{
+    z-index: -1;
+    position:relative;
+    width: 100%;
+    height: 100%;	
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+/*******************CARDS*******************/
+/*Defines how cards are displayed*/
+.cards_content{
+    position: relative;
+    margin:2vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30vw;
+    max-width: 400px;
+    min-width: 200px;
+    margin: auto;     /*allows for centering cards, when using justify-content*/
+}
+
+.card div{
+    background-color: #FFE8D6;
+    min-height: 40px;    /*4*10px;*/
+    max-height: 160px; /*4*40px;*/
+    height: min(28vh, 12vw); /*min(4*7vh, 4*3vw);*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+
+}
+
+.card p{
+    text-align: center;
+    font-family: Darker Grotesque;
+    font-size: max(min(min(7vh, 3vw), 30px), 10px);
+    color:#865336;
+    margin: auto;
+}
+
+.card img{
+    width: 100%;
+    height: min(5/4*400px, 3/2*25vw);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+/**************lists*************/
+
+.list_with_emoticons{
+    text-align: left;
+    font-family: Darker Grotesque;
+    font-size: max(min(min(7vh, 3vw), 20px), 10px);
+    color:#865336;
+    margin:25vw;
+    margin-top: 1vw;
+}
+
+
+.list_with_emoticons ul{
+    list-style:none;
+}
+
+
+.list_with_emoticons li:nth-child(2n+1)::before {
+    content: '\1F393';/*"🎓";*/
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.list_with_emoticons li:nth-child(2n)::before {
+    content: '\1F9C2';/*"🧂";*/
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}

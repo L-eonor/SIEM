@@ -1,3 +1,11 @@
+/*Container*/
+.container{
+    display: block;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+}
+
+
 /*******************page divider*******************/
 /*Defines how title and image title are displayed*/
 
@@ -7,7 +15,7 @@
     margin-top: 1vw;
     min-height: 30px;
     max-height: 400px;
-    height: min( 20vh, 10vw);     /*max min para width + height*/
+    height: min( 20vh, 150px);     /*max min para width + height*/
     display: flex;
     align-items: center;
 }
@@ -20,8 +28,8 @@
     text-align:left;
     margin: auto;
     /*escolher uma melhor combinação de color e background que dê para todos*/						
-    color: white;/*rgba(183,183,164, 70%);*/
-    background-color: #6B705C;
+    color: #865336;/*rgba(183,183,164, 70%);*/
+    background-color: rgba(255, 255, 255, 70%);
     padding: 5px;
     border-radius: 5%;
 
@@ -127,6 +135,7 @@
     color:#865336;
     margin:25vw;
     margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
 
@@ -147,6 +156,31 @@
     width: 25px;
     display: inline-block;
     text-align: center;
+}
+
+/************************videos********************************************************/
+
+
+.video {
+    width:50vw;
+    margin:25vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding-top: 2vh;
+    display:block;
+}
+.video div{
+    height: 28.125vw;
+}
+.video p{
+    text-align: right;
+    font-family: Darker Grotesque;
+    font-size: max(min(min(7vh, 3vw), 20px), 10px);
+    color:#865336;
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -177,6 +211,7 @@
 .recipes_content #text{
     flex-grow: 1;
     margin-left: 5vw;
+    width: 50vw;
     
 }
 
@@ -222,4 +257,31 @@
 }
 
 
+
+/**************DOWNLOADS*********************************/
+#downloads{
+    position: relative;
+    margin:2vw;
+    margin-top: 1vw;
+    min-height: 30px;
+    max-height: 400px;
+    height: min( 20vh, 150px);     /*max min para width + height*/
+    display: flex;
+    align-items: center;
+}
+#downloads div{
+    flex-grow: 1;
+    text-align: center;
+    font-family: Darker Grotesque;
+    font-size: max(min(min(7vh, 3vw), 20px), 10px);
+    color:#6B705C;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin:2vw;
+
+}
+#downloads span{
+    font-size: 30px;
+    vertical-align: middle;
+}
 

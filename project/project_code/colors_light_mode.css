@@ -6,7 +6,8 @@ body{
 
 .cover h1{
     color: #865336;
-    background-color:rgba(255,232,214, 50%);
+    background-color:rgba(255,232,214, 70%);
+    
 }
 
 
@@ -16,11 +17,23 @@ body{
     background-color:rgba(255,232,214, 100%);
 }
 
+.footer{
+    color: #6B705C;
+}
+
+/*sneak peek*/
+.cover_content h2{
+    color: #865336;
+}
+.cover_content .arrow{
+    border: solid #865336;
+}
 
 /****************** NAVBAR STYLE ***************************************************************************************************************/
-.div_Navbar{
+.div_Navbar, .div_Navbar div{
     background-color: white;
 }
+
 
 
 .div_Navbar a { 
