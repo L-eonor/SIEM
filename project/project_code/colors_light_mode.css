@@ -66,3 +66,14 @@ body{
 .div_Navbar #darkMode_item a{
     color: #6B705C;
 }
+
+
+
+/*****************RECIPES****************************************************/
+.page_quick_description h2{
+    color: #865336;
+}
+
+.page_quick_description p{
+    color: #6B705C;
+}

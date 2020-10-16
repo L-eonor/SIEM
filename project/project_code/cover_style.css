@@ -9,8 +9,8 @@
 /*cover photo and text*/
 .cover{
     position: relative;
-    height: 60vh;
-    max-height: 800px;
+    height: 50vh;
+    max-height: 700px;
 }
 
 .cover div {
@@ -91,7 +91,7 @@
     left:0;
     animation-name: arrow_up_down;
     animation-duration: 1s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
