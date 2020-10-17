@@ -11,9 +11,11 @@
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret One'>
 		<link rel='stylesheet' href='navebar.css' >
 		<link rel='stylesheet' href='page_layout.css' >
-		<link rel='stylesheet' href='colors_light_mode.css'>
+		<link rel='stylesheet' href='colors.css'>
 		<link rel="stylesheet" href="footer.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--link icons-->
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css" media="screen">    <!--FLICKITY-->
 	</head>
 
 	<body>
@@ -57,29 +59,59 @@
 			<img src="images\headers\about_me.jpg" alt="About Me cover photo"> 
 		</div>
 
-		<div class="recipes_content">
+		
+
+		<div class="recipes_content" id="about_me">
             <img src="images\aboutme.jpg"> 
             <div id="text">
                 
                 <div id="info">
-
-                    <p>Education</p>
-                    <ul id="ingredients">
-                        <li>Some info </li>
-                        <li>Some info </li>
-                        <li>Some info </li>
-                    </ul>
-        
-                    <p>Interest</p>
+					<div class="page_quick_description">
+						<h2>
+							University Student @ the Kitchen
+						</h2>
+					</div>
                     <ul id="preparation">
-                        <li>Some info </li>
-                        <li>Some info </li>
-                        <li>Some info </li>
-                    </ul>
+                        <li> Leonor Santos </li>
+                        <li> Master in Electrical and Computers Engineering </li>
+						<li> Automation, Robotics Specialization </li>
+						<li> <a href="mailto:up201504515@fe.up.pt" >up201504515@fe.up.pt</a></li>
+					</ul>
+					
+					
+                    <ul id="ingredients">
+                        <li> My interests includ sports, rock music and photography. Some of the photos can be checked down below:</li>
+						<li> The source code implemented in this website can be accessed at <a href="downloads.html">Downloads</a></li>
+						
+					</ul>
                 </div>
             </div>
 		</div>
 		
+		<div class="page_quick_description" id="FAV_RECIPES">
+			<h2>
+				Some  of my favourite photos:
+			</h2>
+			<script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+
+			<div class="carousel" 
+				data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "wrapAround": true, "freeScroll": true}'>
+
+							<img src="images\other\img1.jpg"> 
+							
+							<img src="images\other\img2.jpg"> 
+							<img src="images\other\img3.jpg"> 
+							<img src="images\other\img4.jpg"> 
+							<img src="images\other\img5.jpg"> 
+							<img src="images\other\img6.jpg"> 
+							<img src="images\other\img7.jpg"> 
+							<img src="images\other\img8.jpg"> 
+							<img src="images\other\img9.jpg"> 
+				
+			</div>
+
+		</div>
+
 		<div class="footer">
 			<p>Find me @:</p>
 			<div class="links">
@@ -92,6 +124,6 @@
 				<a href="mailto:leonor.cs.santos@gmail.com" class="fa fa-envelope" target="_blank"></a>
 			</div>
 		</div>
-		
+
 	</body>
 </html>

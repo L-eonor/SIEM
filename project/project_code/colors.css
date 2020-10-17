@@ -77,3 +77,8 @@ body{
 .page_quick_description p{
     color: #6B705C;
 }
+
+/**about me*/
+#about_me a{
+    color: #6B705C;
+}

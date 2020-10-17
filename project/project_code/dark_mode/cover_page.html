@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<title>Uni Student @ the Kitchen</title>
+		<link rel="icon" type="image/png" href="images/logo/site-logo-hover.png">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">		
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Darker Grotesque'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret One'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   <!--arrow  pointing down-->
+
+		<link rel='stylesheet' href='cover_style.css' >
+		<link rel='stylesheet' href='page_layout.css' >
+		<link rel='stylesheet' href='navebar.css' >
+		<link rel='stylesheet' href='colors.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--link icons-->
+		<link rel="stylesheet" href="footer.css">
+
+		
+		<!--  #TODO: dark mode style sheet change    --> 	
+	</head>
+
+	<body>
+	
+	
+		<div class="div_Navbar">
+			<div>
+				<a href="cover_page.html"> <img class="navb_logo" src="images/logo/site-logo.png" alt="HomePage"> <img class="navb_logo_hover" src="images/logo/site-logo-hover.png" alt="HomePage">  </a>
+			</div>
+			<div>
+				<a href="recipes.html" > Recipes & Ideas    </a>
+				<div class="dropdown">
+					<a href="recipes_breakfast.html">    Breakfast</a>
+					<hr>
+					<a href="recipes_lunch_dinner.html"> Lunch/Dinner</a>
+					<hr>
+					<a href="recipes_snacks.html">       Snacks</a>
+				</div>
+			</div>
+			<div>
+				<a href="tips.html"> Tips           </a>
+			</div>
+			<div>
+				<a href="about_me.html"> About Me</a>
+			</div>
+			<div>
+				<a href="downloads.html"> Downloads </a>
+			</div>
+		
+			<div id="darkMode_item">
+				<a href="dark_mode/cover_page.html" > Dark Mode </a>
+				<label class="switch">
+					<input type="checkbox" id="darkCheck"  onclick="window.location.assign('cover_page_dark.html')" >
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+		
+		
+		<div class="cover_content">
+			<div class="cover">
+				<img  src="images\headers\cover_photo.jpg" alt="cover photo"> 
+				<div><h1 >University Student @ the Kitchen</h1></div>
+			</div>
+		</div>
+
+		<div class="cover_content">
+			<div class="description">
+				<p>When a uni student tries to balance healthy eating habits, academic responsibilities and personal life, anything can happen.
+					Here, there's a sneak peek at the colourful (hopefully) meals, for those looking for inspiration. Meanwhile, a foodie is growing strong.
+				</p>
+			</div>		
+		</div>
+
+
+		<div class="cover_content">
+			<h2>  Recipes' Sneak Peek  </h2>
+			<a href="#expand_more">
+				<div class="button_to_expand">
+					<i class="material-icons">expand_more</i>
+				</div>
+			</a>
+		
+		</div>	
+			
+		<div class="cover_content recipes_overview" id="expand_more">
+			<div class="peek" id="peek1">
+					<img  class="img1" src="images\to_be_displayed\img1.jpg"> 
+					<img  class="img2" src="images\to_be_displayed\img2.jpg"> 
+					<img  class="img3" src="images\to_be_displayed\img3.jpg"> 
+			</div>
+			<div class="peek" id="peek2">
+					
+					<img  class="img1" src="images\to_be_displayed\img4.jpg"> 
+					<img  class="img2" src="images\to_be_displayed\img5.jpg"> 
+					<img  class="img3" src="images\to_be_displayed\img6.jpg"> 
+			</div>
+			<div class="peek" id="peek3">
+					
+					<img  class="img1" src="images\to_be_displayed\img7.jpg"> 
+					<img  class="img2" src="images\to_be_displayed\img8.jpg"> 
+					<img  class="img3" src="images\to_be_displayed\img9.jpg"> 
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cover_content">
+
+			<h2>
+				More recipes at:
+			</h2>
+
+			<a href="recipes.html">
+				<div class="page_descriptor" id="recipes">
+					<h1 id="recipes_link">Recipes & Ideas</h1>			
+					<img src="images\headers\cover_photo.jpg" alt="recipes cover photo"> 
+				</div>
+	
+			</a>
+		</div>
+
+
+		<div class="cover_content">
+			<h2>
+				Know me at:
+			</h2>
+
+			<a href="about_me.html">
+				<div class="page_descriptor" id="about_me">
+					<h1>About Me</h1>			
+					<img src="images\aboutme.jpg" alt="About Me cover photo"> 
+				</div>
+		
+	
+			</a>
+		</div>
+
+
+		
+
+		<div class="footer" id="footer_cover">
+			<p>Find me @:</p>
+			<div class="links">
+				<a href="https://twitter.com/feup_porto?s=20"        	class="fa fa-twitter"  	target="_blank"></a>
+				<a href="https://www.linkedin.com/in/leonor-santos/" 	class="fa fa-linkedin" 	target="_blank"></a>
+				<a href="https://www.youtube.com/user/FEUPtv"      		class="fa fa-youtube" 	target="_blank"></a>
+				<a href="https://www.instagram.com/feup_porto" 			class="fa fa-instagram" target="_blank"></a>
+				<a href="#" class="fa fa-skype" target="_blank"></a>
+				<a href="https://github.com/L-eonor" class="fa fa-github" target="_blank"></a>
+				<a href="mailto:leonor.cs.santos@gmail.com" class="fa fa-envelope" target="_blank"></a>
+			</div>
+		</div>
+
+	</body>
+
+	
+
+
+</html>
