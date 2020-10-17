@@ -79,6 +79,9 @@
     font-size: max(min(min(7vh, 3vw), 30px), 10px);
 }
 
+#FAV_RECIPES{
+    margin-top: 5vw;;
+}
 .page_quick_description .carousel img{
     /*max-width: 300px;
     max-height: 300px;*/
