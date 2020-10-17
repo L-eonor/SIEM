@@ -75,6 +75,27 @@
     font-size: max(min(min(7vh, 3vw), 30px), 10px);
 }
 
+.page_quick_description .carousel img{
+    /*max-width: 300px;
+    max-height: 300px;*/
+    width:25vw;
+    height:25vw;
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
 /*******************CARDS*******************/
 /*Defines how cards are displayed*/
 .cards_content{
