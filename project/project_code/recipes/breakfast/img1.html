@@ -14,6 +14,10 @@
 		<link rel='stylesheet' href='..\..\navebar.css' >
 		<link rel='stylesheet' href='..\..\page_layout.css' >
 		<link rel='stylesheet' href='..\..\colors_light_mode.css'>
+
+		<link rel="stylesheet" href="..\..\footer.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--link icons-->
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css" media="screen">    <!--FLICKITY-->
 		
 	</head>
 
@@ -53,39 +57,135 @@
 			</div>
 		</div>
 		
-		<div class="page_descriptor">
-			<h1>Breakfast</h1>			
-			<img src="..\..\images\headers\breakfast_header.jpg" alt="breakfast cover photo"> 
-		</div>
+		<a href="..\..\recipes_breakfast.html">
+			<div class="page_descriptor">
+				<h1>Breakfast</h1>			
+				<img src="..\..\images\headers\breakfast_header.jpg" alt="breakfast cover photo"> 
+			</div>
+		</a>
 	
 		<div class="recipes_content">
             <img src="..\..\images\recipes\breakfast\img1.jpg"> 
             <div id="text">
                 <div id="header"> 
-                    <h2> Oatmeal with Blueberries and raspberries </h2>
-                    <h2>5mins &#x1F552</h2>
+                    <h2> Pancackes in 10 mins </h2>
+                    <h2> 10 pancakes; 5mins &#x1F552</h2>
                 </div>
                 <div id="info">
-
-                    <p>Ingredients</p>
-                    <ul id="ingredients">
-                        <li>200 ml vegetal milk </li>
-                        <li>½ cup frozen blueberries and raspberries </li>
-                        <li>2 cups oatmeal </li>
-                    </ul>
-        
-                    <p>Preparation</p>
-                    <ul id="preparation">
-                        <li>Warm the milk</li>
-                        <li>Let berries defrost</li>
-                        <li>Add the oatmeal</li>
-                        <li>Let it soften</li>
-                        <li>Add berries</li>
-                    </ul>
-                
+					<div>
+						<p>Ingredients</p>
+						<ul id="ingredients">
+							<li>400ml almond milk </li>
+							<li>300g plain flour, we use gluten-free</li>	
+							<li>50g bircher muesli, or porridge oats</li>	
+							<li>2 tablespoons coconut oil, melted</li>	
+							<li>1 teaspoon chia seeds</li>	
+							<li>1 tablespoon maple syrup</li>	
+							<li>1 teaspoon baking powder </li>	
+						</ul>
+					</div>
+                    
+					<div>
+						<p>Preparation</p>
+						<ul id="preparation">
+							<li>Stir all of the pancake ingredients together to form a smooth, thick batter. If it feels a little thin, leave it to sit for 5-10 minutes.</li>
+							<li>Warm a tablespoon of coconut oil in a pan over a medium heat. Once warm, spoon in a large tablespoon of pancake batter into the pan, using a wooden spoon to spread out the mixture.</li>
+							<li>Cook on one side for 3-4 minutes until golden, before turning and cooking on the other side for 2-3 minutes.</li>
+							<li>Let it soften</li>
+							<li>Repeat until the pancake mixture is finished.</li>
+						</ul>
+					</div>
                 </div>
             </div>
-        </div>
+		</div>
+		
+
+		<div class="page_quick_description" id="FAV_RECIPES">
+			<h2>
+				Some  of my favourite recipes:
+			</h2>
+			
+			<script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+
+			<div class="carousel" 
+				data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "wrapAround": true, "freeScroll": true}'>
+
+				<div class="card">
+					<a href="..\..\recipes\breakfast\img1.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\breakfast\img1.jpg"> 
+							<div class="description_on_hover"> <p> Pancackes in 10 mins </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\breakfast\img8.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\breakfast\img8.jpg">
+							<div class="description_on_hover"> <p> Blueberry and Raspberry Oatmeal </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\lunch\img16.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\lunch\img16.jpg"> 
+							<div class="description_on_hover"> <p> Guacamole, Roasted Veggies and Egg Toast </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\lunch\img11.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\lunch\img11.jpg"> 
+							<div class="description_on_hover"> <p> Simple Mushroom Risotto </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\snacks\img5.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\snacks\img5.jpg"> 
+							<div class="description_on_hover"> <p> Sweet Potato Brownies with Chocolate Sauce </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\lunch\img12.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\lunch\img12.jpg"> 
+							<div class="description_on_hover"> <p> Cashew Pesto Pasta </p></div>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="..\..\recipes\lunch\img9.html" target="_blank">
+						<div>
+							<img src="..\..\images\recipes\lunch\img9.jpg"> 
+							<div class="description_on_hover"> <p> Creamy Garlic Thyme Mushrooms </p></div>
+						</div>
+					</a>
+				</div>
+				
+				
+				
+			</div>
+
+		</div>
+
+
+		<div class="footer">
+			<p>Find me @:</p>
+			<div class="links">
+				<a href="https://twitter.com/feup_porto?s=20"        	class="fa fa-twitter"  	target="_blank"></a>
+				<a href="https://www.linkedin.com/in/leonor-santos/" 	class="fa fa-linkedin" 	target="_blank"></a>
+				<a href="https://www.youtube.com/user/FEUPtv"      		class="fa fa-youtube" 	target="_blank"></a>
+				<a href="https://www.instagram.com/feup_porto" 			class="fa fa-instagram" target="_blank"></a>
+				<a href="#" class="fa fa-skype" target="_blank"></a>
+				<a href="https://github.com/L-eonor" class="fa fa-github" target="_blank"></a>
+				<a href="mailto:leonor.cs.santos@gmail.com" class="fa fa-envelope" target="_blank"></a>
+			</div>
+		</div>
 		
 	</body>
 </html>
