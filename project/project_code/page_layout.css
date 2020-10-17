@@ -60,6 +60,10 @@
     text-align: center;
     padding-left: 2vw;
     padding-right: 2vw;
+    
+}
+.page_quick_description a{
+    text-decoration: none;
 }
 
 .page_quick_description h2{
@@ -114,6 +118,7 @@
 }
 
 .card{
+    
     width: 30vw;
     max-width: 400px;
     min-width: 200px;
