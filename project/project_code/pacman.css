@@ -47,10 +47,10 @@
 
 .pacman__food {
     position: absolute;
-    width: 15px;
+    /*width: 15px;
     height: 15px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50%;*/
     top: 40%;
     left: 120px;
     animation-name: food;
@@ -81,8 +81,16 @@
       transform: translateX(0);
         opacity: 1;
     }
-    100% {
+    50% {
       transform: translateX(-50px);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-51px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(-100px);
       opacity: 0;
     }
   }

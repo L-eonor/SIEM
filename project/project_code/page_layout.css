@@ -340,3 +340,6 @@
     vertical-align: middle;
 }
 
+#downloads a{
+    text-decoration: none;
+}
