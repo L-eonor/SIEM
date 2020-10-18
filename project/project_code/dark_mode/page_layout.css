@@ -27,9 +27,9 @@
     
     text-align:left;
     margin: auto;
-    /*escolher uma melhor combinação de color e background que dê para todos*/						
-    color: #865336;/*rgba(183,183,164, 70%);*/
-    background-color: rgba(255, 255, 255, 70%);
+    /*escolher uma melhor combinação de color e background que dê para todos					
+    color: #865336;
+    background-color: rgba(255, 255, 255, 70%);*/
     padding: 5px;
     border-radius: 5%;
 
@@ -134,7 +134,7 @@
 
 .card .description_on_hover{  /*div containing card description*/
     
-    background-color: #FFE8D6;
+    /*background-color: #FFE8D6;*/
     opacity: 0.8;
     /*min-height: 40px;    /*4*10px;
     max-height: 160px; /*4*40px;
@@ -158,18 +158,14 @@
 }
 
 .card :hover  .description_on_hover{   /*esconde a div "description_on_hover, mas se for só a description on hover, nao funciona, porque torna ambas as div flexíveis (a description on hover e o pai), daí ter acrescentado o bloco de cima*/
-    display: flex;   /*flex permite que ao mostrar, a div em metade*/
-}
-
-@keyframes appear_card_descp{
-    /*TODO*/
+   display: flex;   /*flex permite que ao mostrar, a div em metade*/
 }
 
 .card p{
     text-align: center;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 30px), 10px);
-    color:#865336;
+    /*color:#865336;*/
     margin: auto;
     opacity: 1;
 }
@@ -181,13 +177,34 @@
     overflow: hidden;
 }
 
+.card :hover div img{
+    animation: zoominoutsinglefeatured 1s ease-in-out forwards;
+}
+
+
+
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        width: 150%;
+        /*transform: scale(1,1);*/
+        
+    
+    }
+    100% {
+        width: 100%;
+        /*transform: scale(0.5,0.5);*/
+    }
+}
+
+
 /**************lists*************/
 
 .list_with_emoticons{
     text-align: left;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
-    color:#865336;
+    /*color:#865336;*/
     margin:25vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -231,7 +248,7 @@
     text-align: right;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
-    color:#865336;
+    /*color:#865336;*/
 }
 .video iframe{
     width: 100%;
@@ -273,9 +290,9 @@
     text-align: left;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
-    color:#865336;
+    /*color:#865336;*/
     margin:auto;
-    background-color: #FFE8D6;
+    /*background-color: #FFE8D6;*/
     display: flex;
     justify-content: space-between;
     padding-right: 1vw;
@@ -287,7 +304,7 @@
     text-align: left;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
-    color:#6B705C;
+    /*color:#6B705C;*/
     padding-right: 1vw;
     padding-left: 1vw;
 }
@@ -328,7 +345,7 @@
     text-align: center;
     font-family: Darker Grotesque;
     font-size: max(min(min(7vh, 3vw), 20px), 10px);
-    color:#6B705C;
+    /*color:#6B705C;*/
     padding-right: 1vw;
     padding-left: 1vw;
     margin:2vw;

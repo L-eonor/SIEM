@@ -3,21 +3,19 @@
 <html>
 
 	<head>
-		<!-- Tab information -->
-		<title>Uni Student @ the Kitchen</title>
-		<link rel="icon" type="image/png" href="..\..\images/logo/site-logo-hover.png">
 		
-		<!-- Font links -->
+		<title>Uni Student @ the Kitchen</title>
+		<link rel="icon" type="image/png" href="images/logo/site-logo-hover.png">
+		
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Darker Grotesque'>
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret One'>
-
-		<link rel='stylesheet' href='..\..\navebar.css' >
-		<link rel='stylesheet' href='..\..\page_layout.css' >
-		<link rel='stylesheet' href='..\..\colors.css'>
-		<link rel="stylesheet" href="..\..\footer.css">
+		<link rel='stylesheet' href='navebar.css' >
+		<link rel='stylesheet' href='page_layout.css' >
+		<link rel="stylesheet" href="footer.css">
+		<link rel='stylesheet' href='colors.css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--link icons-->
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css" media="screen">    <!--FLICKITY-->
-		
+
 	</head>
 
 	<body>
@@ -25,79 +23,84 @@
 	
 		<div class="div_Navbar">
 			<div>
-				<a href="..\..\cover_page.html"> <img class="navb_logo" src="..\..\images/logo/site-logo.png" alt="HomePage"> <img class="navb_logo_hover" src="..\..\images/logo/site-logo-hover.png" alt="HomePage">  </a>
+				<a href="cover_page.html"> <img class="navb_logo" src="images/logo/site-logo.png" alt="HomePage"> <img class="navb_logo_hover" src="images/logo/site-logo-hover.png" alt="HomePage">  </a>
 			</div>
 			<div>
-				<a href="..\..\recipes.html" id="current_page"> Recipes & Ideas    </a>
+				<a href="recipes.html" id="current_page"> Recipes & Ideas    </a>
 				<div class="dropdown">
-					<a href="..\..\recipes_breakfast.html">    Breakfast</a>
+					<a href="recipes_breakfast.html">    Breakfast</a>
 					<hr>
-					<a href="..\..\recipes_lunch_dinner.html"> Lunch/Dinner</a>
+					<a href="recipes_lunch_dinner.html"> Lunch/Dinner</a>
 					<hr>
-					<a href="..\..\recipes_snacks.html">       Snacks</a>
+					<a href="recipes_snacks.html">       Snacks</a>
 				</div>
 			</div>
 			<div>
-				<a href="..\..\tips.html"> Tips           </a>
+				<a href="tips.html"> Tips           </a>
 			</div>
 			<div>
-				<a href="..\..\about_me.html"> About Me</a>
+				<a href="about_me.html"> About Me</a>
 			</div>
 			<div>
-				<a href="..\..\downloads.html"> Downloads </a>
+				<a href="downloads.html"> Downloads </a>
 			</div>
 		
 			<div id="darkMode_item">
 				<a href="#Dark Mode" > Dark Mode </a>
 				<label class="switch">
-					<input type="checkbox" id="darkCheck"  onclick="window.location.assign('../../dark_mode/recipes/breakfast/img5.html')" >
+					<input type="checkbox" id="darkCheck"  onclick="window.location.assign('../recipes.html')" checked>
 					<span class="slider round"></span>
 				</label>
 			</div>
 		</div>
 		
-		<a href="..\..\recipes_breakfast.html">
-			<div class="page_descriptor">
-				<h1>Breakfast</h1>			
-				<img src="..\..\images\headers\breakfast_header.jpg" alt="breakfast cover photo"> 
-			</div>
-		</a>
-	
-		<div class="recipes_content">
-            <img src="..\..\images\recipes\breakfast\img5.jpg"> 
-            <div id="text">
-                <div id="header"> 
-                    <h2> Blueberry and Banana Smoothie</h2>
-                    <h2> serves 1; 2 mins &#x1F552</h2>
-                </div>
-                <div id="info">
-					<div>
-						<p>Ingredients</p>
-						<ul id="ingredients">
-							<li>1 ripe banana</li>	
-							<li>Handful of blueberries, about half a cup</li>	
-							<li>Half a cup ice cold water</li>	
-							<li>1 tablespoon chia seeds</li>	
-							<li>1 tablespoon flaxseed</li>	
-							<li>1 tablespoon oats</li>	
-							<li>1 tablespoon almond butter</li>	
-							<li>2 medjool dates, pitted</li>	
-						</ul>
-					</div>
-                    
-					<div>
-						<p>Preparation</p>
-						<ul id="preparation">
-							<li>Place all of the ingredients into a blender or food processor.</li>
-							<li>Pulse until smooth - adding a dash more water if needed.</li>
-						</ul>
-					</div>
-                </div>
-            </div>
-        </div>
+		<div class="page_descriptor">
+			<h1>Recipes & Ideas</h1>			
+			<img src="images\headers\cover_photo.jpg" alt="recipes cover photo"> 
+		</div>
 		
+		<div class="page_quick_description">
+			<h2>
+				Colorful, healthy, easy recipes
+			</h2>
 
-		
+			<p>
+				Here you can find inpiration to your day to day meals, which can be hard when we are immersed into college projects. The main focus is to create nutritive dishes, balance ingredients, but also appeal to all 5 senses.
+				A great meal will make our days definitely better, cooking a delicious meal at home, in a few minutes will be even worthier! To start with, choose the meal to explore, by hovering the images.
+			</p>
+		</div>
+
+		<div class="cards_content">
+			
+			<div class="card">
+				<a href="recipes_breakfast.html">
+					<div>
+						<img src="images\headers\breakfast_header.jpg"> 
+						<div class="description_on_hover"> <p> Breakfast </p> </div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="card">
+				<a href="recipes_lunch_dinner.html">
+					<div>
+						<img src="images\headers\lunch_dinner.jpg"> 
+						<div class="description_on_hover"> <p> Lunch/Dinner </p></div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="card">
+				<a href="recipes_snacks.html">
+					<div>
+						<img src="images\headers\snacks.jpg"> 
+						<div class="description_on_hover"> <p> Snacks </p></div>
+					</div>
+				</a>
+			</div>
+			
+			
+		</div>
 
 		<div class="page_quick_description" id="FAV_RECIPES">
 			<h2>
@@ -110,57 +113,57 @@
 				data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "wrapAround": true, "freeScroll": true}'>
 
 				<div class="card">
-					<a href="..\..\recipes\breakfast\img1.html" target="_blank">
+					<a href="recipes\breakfast\img1.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\breakfast\img1.jpg"> 
+							<img src="images\recipes\breakfast\img1.jpg"> 
 							<div class="description_on_hover"> <p> Pancackes in 10 mins </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\breakfast\img8.html" target="_blank">
+					<a href="recipes\breakfast\img8.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\breakfast\img8.jpg">
+							<img src="images\recipes\breakfast\img8.jpg">
 							<div class="description_on_hover"> <p> Blueberry and Raspberry Oatmeal </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\lunch\img16.html" target="_blank">
+					<a href="recipes\lunch\img16.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\lunch\img16.jpg"> 
+							<img src="images\recipes\lunch\img16.jpg"> 
 							<div class="description_on_hover"> <p> Guacamole, Roasted Veggies and Egg Toast </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\lunch\img11.html" target="_blank">
+					<a href="recipes\lunch\img11.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\lunch\img11.jpg"> 
+							<img src="images\recipes\lunch\img11.jpg"> 
 							<div class="description_on_hover"> <p> Simple Mushroom Risotto </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\snacks\img5.html" target="_blank">
+					<a href="recipes\snacks\img5.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\snacks\img5.jpg"> 
+							<img src="images\recipes\snacks\img5.jpg"> 
 							<div class="description_on_hover"> <p> Sweet Potato Brownies with Chocolate Sauce </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\lunch\img12.html" target="_blank">
+					<a href="recipes\lunch\img12.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\lunch\img12.jpg"> 
+							<img src="images\recipes\lunch\img12.jpg"> 
 							<div class="description_on_hover"> <p> Cashew Pesto Pasta </p></div>
 						</div>
 					</a>
 				</div>
 				<div class="card">
-					<a href="..\..\recipes\lunch\img9.html" target="_blank">
+					<a href="recipes\lunch\img9.html" target="_blank">
 						<div>
-							<img src="..\..\images\recipes\lunch\img9.jpg"> 
+							<img src="images\recipes\lunch\img9.jpg"> 
 							<div class="description_on_hover"> <p> Creamy Garlic Thyme Mushrooms </p></div>
 						</div>
 					</a>
@@ -169,6 +172,17 @@
 				
 				
 			</div>
+
+
+
+			
+			
+
+
+				
+
+
+
 
 		</div>
 

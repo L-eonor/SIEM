@@ -13,10 +13,24 @@ body{
     background-color: #A5A58D;
 }
 
+.footer{
+    color: #FFE8D6;
+}
+
+/*sneak peek*/
+.cover_content h2{
+    color: #FFE8D6;
+}
+.cover_content .button_to_expand i{
+    color: #FFE8D6;
+}
+
+
 
 /****************** NAVBAR STYLE ***************************************************************************************************************/
 .div_Navbar{
     background-color: #6B705C;
+    border-bottom:#FFE8D6 5px dashed;
 }
 
 
@@ -42,6 +56,80 @@ body{
     border:1px solid #6B705C ;
 }
 
+.div_Navbar #darkMode_item{
+    background-color: #6B705C;
+}
+
 .div_Navbar #darkMode_item a{
     color: #FFE8D6;
+}
+
+
+/*****************RECIPES****************************************************/
+.page_quick_description h2{
+    color: #B7B7A4;
+}
+
+.page_quick_description p{
+    color: #FFE8D6;
+}
+
+/**about me*/
+#about_me a{
+    color: #FFE8D6;
+}
+
+
+/*********************PAGE LAYOUT*************************************************************/
+.page_descriptor h1{
+    
+    /*escolher uma melhor combinação de color e background que dê para todos*/						
+    color: #6B705C;/*rgba(183,183,164, 70%);*/
+    background-color: #B7B7A4;
+    
+}
+.card .description_on_hover{  /*div containing card description*/
+    
+    background-color: #B7B7A4;
+}
+.card p{
+    color:#6B705C;
+}
+
+/**************lists*************/
+
+.list_with_emoticons{
+    color:#FFE8D6;
+}
+
+
+
+/************************videos********************************************************/
+
+.video p{
+    color:#FFE8D6;
+}
+
+/**********************RECIPES DETAILS**************************************/
+
+.recipes_content #header{
+    color: #6B705C;
+    background-color: #B7B7A4;
+}
+
+.recipes_content #info {
+    color:#FFE8D6;
+}
+
+
+/**********************downloads***************************/
+#downloads div{
+    color:#FFE8D6;
+}
+
+
+
+/*********************footer********************************************/
+.fa:hover {
+    background: white;
 }
