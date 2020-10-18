@@ -36,8 +36,7 @@
     z-index: 0;
     position: absolute; /*allows for superposition*/
     
-    -ms-transform: translate(2vw, 0%);
-    transform: translate(2vw, 0%);    
+    margin-left: 2vw; 
     
 }
 
@@ -50,6 +49,28 @@
     overflow: hidden;
     display: block;
 }
+
+
+.page_descriptor :hover {
+    animation: zoom_img 10s linear forwards;
+}
+
+
+
+
+@keyframes zoom_img {
+    
+    100% {
+        
+        transform: scale(1.5 );
+    }
+}
+  
+
+
+
+
+
 
 /***************page_quick_description******************/
 
@@ -91,16 +112,6 @@
     object-fit: cover;
     overflow: hidden;
 }
-
-
-
-  
-
-
-
-
-
-
 
 
 /*******************CARDS*******************/
